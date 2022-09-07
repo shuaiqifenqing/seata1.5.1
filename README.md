@@ -29,3 +29,10 @@ seata的conf文件夹下的application.yml改成这样即可seataServer.properti
 ![image](https://user-images.githubusercontent.com/76611252/188835971-7ba560a3-6fb6-4662-bd46-2ba952b52c9b.png)
 
 
+项目中的版本选择依据访问网址：  
+https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E  
+
+![image](https://user-images.githubusercontent.com/76611252/188841304-0c2eec28-3d7d-44b4-b226-d3884d2b4d9a.png)  
+![image](https://user-images.githubusercontent.com/76611252/188841389-e72d4dd5-b4a4-4a3b-94db-ef998b45b4ce.png)  
+
+
