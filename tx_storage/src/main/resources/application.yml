@@ -1,0 +1,52 @@
+# Spring
+spring:
+  application:
+    # 应用名称
+    name: seata-storage
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/world?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+
+  # nacos 配置
+  cloud:
+    nacos:
+      # nacos 服务地址
+      server-addr: 127.0.0.1:8848
+      discovery:
+        # 注册组 要与 seata 相同
+        group: SEATA_GROUP
+      config:
+        # 配置组 要与 seata 相同
+        group: SEATA_GROUP
+
+
+server:
+  port: 9002
+
+seata:
+  service:
+    vgroup-mapping:
+      tx_storage.group: default
+  tx-service-group: tx_storage.group
+  config:
+    type: nacos
+    nacos:
+      namespace:
+      serverAddr: 127.0.0.1:8848
+      group: SEATA_GROUP
+      username:
+      password:
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      namespace:
+      username:
+      password:
+
+
