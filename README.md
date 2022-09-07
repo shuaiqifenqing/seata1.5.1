@@ -1,6 +1,7 @@
 # seata1.5.1
 10分钟带你整合seata1.5.1+openfeign+nacos2.1.0+springcloud  
 #本项目就是想简单试用一下seata1.5.1的AT模式  
+1.5版本可以直接项目中的yml配置，简单多了，不需要file、register什么的了  
 #下面所提到的建表语句等信息都放在了tx_storage模块的content文件夹下  
 #项目整体流程==》就是通过访问tx_order模块插入数据库一条数据，然后通过openfeign调用tx_storage模块再插入一条数据  
 一、首先你需要去官网下载seata1.5.1的安装包 https://seata.io/zh-cn/  
