@@ -21,5 +21,10 @@
 seata的conf文件夹下的application.yml改成这样即可seataServer.properties和nacos中新建的名字对应
 ![image](https://user-images.githubusercontent.com/76611252/188833353-d5e931e4-872d-41b1-8e7d-0b9e84eda4c2.png)
 
+数据库（mysql）建立seata库且需建立几张表
+![image](https://user-images.githubusercontent.com/76611252/188835231-c969de0c-b313-4477-afca-461e5a0a99ad.png)
+每一个业务库都需要建立一张undo_log表
+![image](https://user-images.githubusercontent.com/76611252/188835837-6d031a6d-b65c-460a-9611-5e982a778cd9.png)
+![image](https://user-images.githubusercontent.com/76611252/188835971-7ba560a3-6fb6-4662-bd46-2ba952b52c9b.png)
 
 
