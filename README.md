@@ -8,7 +8,7 @@
 
 
 
-在nacos中新建这三个配置，注意分组名
+在nacos中新建这三个配置，配置格式选TEXT，注意分组名
 
 ![image](https://user-images.githubusercontent.com/76611252/188832201-ab53e0b0-3791-47e4-8116-a12a675599ea.png)
 
@@ -18,6 +18,8 @@
 
 ![image](https://user-images.githubusercontent.com/76611252/188832798-4162e29e-73ef-47ab-a089-64f2357f96a4.png)
 
+seata的conf文件夹下的application.yml改成这样即可seataServer.properties和nacos中新建的名字对应
+![image](https://user-images.githubusercontent.com/76611252/188833353-d5e931e4-872d-41b1-8e7d-0b9e84eda4c2.png)
 
 
 
